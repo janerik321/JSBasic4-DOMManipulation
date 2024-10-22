@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript Basic - Oppgave 4 - DOM Manipulation</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="number" id="screen" />
+
+      <button class="number" id="calc7" onclick="numberClick(7)">7</button>
+      <button class="number" id="calc8" onclick="numberClick(8)">8</button>
+      <button class="number" id="calc9" onclick="numberClick(9)">9</button>
+      <button id="divide" onclick="operatorClick('/')">/</button>
+      <button class="number" id="calc4" onclick="numberClick(4)">4</button>
+      <button class="number" id="calc5" onclick="numberClick(5)">5</button>
+      <button class="number" id="calc6" onclick="numberClick(6)">6</button>
+      <button id="multiply" onclick="operatorClick('*')">x</button>
+      <button class="number" id="calc1" onclick="numberClick(1)">1</button>
+      <button class="number" id="calc2" onclick="numberClick(2)">2</button>
+      <button class="number" id="calc3" onclick="numberClick(3)">3</button>
+      <button id="subtract" onclick="operatorClick('-')">-</button>
+      <button class="number" id="calc0" onclick="numberClick(0)">0</button>
+      <button id="reset" onclick="clearClick()">C</button>
+
+      <button id="equals" onclick="operatorClick('=')">=</button>
+      <button id="add" onclick="operatorClick('+')">+</button>
+    </div>
+  </body>
+</html>

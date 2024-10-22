@@ -48,6 +48,7 @@ function operatorClick(operator) {
     // }
 
     if (storedOperator === "+") {
+      // console.log("If..." + storedNumber + storedOperator + currentNumber);
       storedNumber += parseInt(currentNumber);
     } else if (storedOperator === "-") {
       storedNumber -= currentNumber;
@@ -58,19 +59,25 @@ function operatorClick(operator) {
     }
   } else {
     firstNumberRun = false;
-    storedNumber = currentNumber;
+    storedNumber = parseInt(currentNumber);
   }
-  console.log("Stored " + storedNumber);
   storedOperator = operator;
-  runConditional = true;
-  screenInput.value = currentNumber;
   console.log("Stored " + storedOperator);
+  console.log("Stored " + storedNumber);
+  runConditional = true;
+  screenInput.value = storedNumber;
+  // screenInput.value = currentNumber;
 }
 
 // 3.
 
 const clearClick = () => {
   screenInput.value = "";
+  currentNumber = 0;
+  storedNumber = 0;
+  storedOperator = "";
+  runConditional = false;
+  firstNumberRun = true;
 
   //   screenInput.replaceChildren();
   //   totalNumber = 0;

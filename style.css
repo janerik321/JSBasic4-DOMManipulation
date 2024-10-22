@@ -12,8 +12,7 @@ body {
 }
 
 #calculator {
-  min-width: 200px;
-  min-height: 300px;
+  max-width: 250px;
   border: 2px solid gray;
   background-color: #dddddd;
   display: grid;
@@ -27,16 +26,18 @@ body {
 button {
   border-radius: 10px;
   border: 1px solid rgb(176, 176, 176);
-  box-shadow: 3px 3px 0px hsla(0, 0%, 0%, 10%);
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 10%);
 }
 button:active {
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(193, 193, 193);
 }
 
 #screen {
   grid-column: 1 / 5;
   border: 1px solid rgb(188, 188, 188);
   background-color: #e7fce6;
+  font-family: Qahiri;
+  font-size: 3em;
   padding: 5px;
   text-align: right;
   border-radius: 7px;

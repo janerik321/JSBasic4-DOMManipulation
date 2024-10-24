@@ -41,6 +41,7 @@ function operatorClick(operator) {
   screenInput.value = storedNumber;
 }
 
+// Clear function
 const clearClick = () => {
   screenInput.value = "";
   currentNumber = 0;

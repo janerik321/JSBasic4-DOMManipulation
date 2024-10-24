@@ -36,7 +36,7 @@ button:active {
   grid-column: 1 / 5;
   border: 1px solid rgb(188, 188, 188);
   background-color: #e7fce6;
-  font-family: Qahiri;
+  font-family: Qahiri, monospace;
   font-size: 3em;
   padding: 5px;
   text-align: right;
